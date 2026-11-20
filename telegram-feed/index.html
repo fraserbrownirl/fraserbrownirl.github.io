@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Telegram channels, in one private group</title>
+  <meta name="description" content="A bot that files opted-in Telegram channels into a private group you own. Newest, Popular, and For You — and only if you were already a member.">
+  <link rel="canonical" href="https://fraserbrownirl.github.io/telegram-feed/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Your Telegram channels, in one private group">
+  <meta property="og:description" content="A bot that files opted-in Telegram channels into a private group you own. Newest, Popular, and For You — and only if you were already a member.">
+  <meta property="og:url" content="https://fraserbrownirl.github.io/telegram-feed/">
+  <meta property="og:image" content="https://fraserbrownirl.github.io/telegram-feed/cover.jpg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main>
+    <p class="kicker">Project note</p>
+    <h1>Your Telegram channels, in one private group</h1>
+    <figure>
+      <img src="cover.jpg" alt="A messy stack of papers, a wooden stamp press, and a cork board split into three columns of notes.">
+      <figcaption>A pile of channels, a check in the middle, then three columns that belong to you.</figcaption>
+    </figure>
+    <p>Telegram is an easy place to follow one channel and a clumsy place to follow twenty. Nothing shares a timeline. The post you meant to read is sitting under three you didn't, and the usual repair is a logged-in user account on a server, quietly reading your chats.</p>
+    <p>This is the smaller machine. One bot. You make a private group, turn topics on, and add the bot with permission to manage them. It opens three topics and keeps them fed.</p>
+    <p>Newest is the live pile: posts from the channels you added, as they go up. Popular comes back every few hours with the ones people reacted to, weighed by how recent they are and scaled so a huge channel doesn't win just by being huge. For You is the nosy friend. It suggests channels that show up next to yours among people with a similar list, and you add one by tapping the card. The product is the group. There isn't a website beside it, on purpose.</p>
+    <h2>Two yeses before a post moves</h2>
+    <p>The channel owner adds the bot as an admin and leaves the permissions unticked. That's the opt-in. The bot can tell the channel wants to be available, and it never writes in the channel. Remove the bot and the channel drops out of the network.</p>
+    <p>The reader forwards any post from that channel to the bot. The bot asks Telegram, with getChatMember, what that person is in the chat. Creator, administrator, or member, and the channel can join the feed. Anyone else, and it can't. The feed is not a back door into a channel you weren't let into.</p>
+    <p>That constraint is the product. A mirror that logs in as you can see what you can see, and it also holds your account. A public repost bot can put a channel in front of people who never joined. A personal feed should do the duller job: carry access you already have. One more rule sits on that. If the channel turned content protection on, Telegram refuses the forward, and the bot does not copy the message out the side. The owner already decided the post stays put.</p>
+    <h2>Working, and not finished</h2>
+    <p>It's a bot you can run. It is not a finished product with a homepage of its own. There's no mini app, no analytics for the channel owner, and For You is not a model reading the posts and grading your taste. It notices overlapping subscriptions, and what's picking up reactions. Useful. Not a magazine.</p>
+    <p>The shape of it, if you want to feel it: open the bot, send /start, make a group, turn Topics on, add the bot, then forward a post from a channel you're in whose owner has added the bot too. /list is what's coming in. You can pause the whole thing when you want the afternoon back.</p>
+  </main>
+</body>
+</html>

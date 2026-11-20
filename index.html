@@ -3,38 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>A personal Telegram feed</title>
-  <style>
-    body {
-      margin: 0;
-      background: #f6f4ef;
-      color: #1c1917;
-      font: 1.125rem/1.65 Georgia, "Iowan Old Style", Palatino, serif;
-    }
-    main {
-      max-width: 38rem;
-      margin: 0 auto;
-      padding: 4.5rem 1.5rem 6rem;
-    }
-    h1 {
-      font-size: 1.85rem;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      line-height: 1.2;
-      margin: 0 0 2rem;
-    }
-    p {
-      margin: 0 0 1.35rem;
-    }
-  </style>
+  <title>Project notes</title>
+  <meta name="description" content="Short public pages for projects that don't have a website yet.">
+  <link rel="canonical" href="https://fraserbrownirl.github.io/">
+  <meta property="og:title" content="Project notes">
+  <meta property="og:description" content="Short public pages for projects that don't have a website yet.">
+  <meta property="og:url" content="https://fraserbrownirl.github.io/">
+  <meta property="og:image" content="https://fraserbrownirl.github.io/telegram-feed/cover.jpg">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main>
-    <h1>A personal Telegram feed</h1>
-    <p>I built a personal Telegram feed using Cursor with Grok 4.7. It's for someone who already reads a pile of channels and wants them in one private group: Newest as posts arrive, Popular scored from reactions and how recent a post is, and For You from people who read a similar set. The bet is that a feed can be personal without a bot logging in as you.</p>
-    <p>What's new is a feed that only carries a post you were already allowed to see. A channel joins when its owner adds the bot as an admin, and a reader only gets it after Telegram confirms they are already in that channel. There is no user session behind it. If a channel has content protection on, the post is skipped instead of copied out. The usual mirror either logs in as you and pulls every chat, or republishes a channel to people who were never members. This one does neither. A pipe for access you already have.</p>
-    <p>The check itself is getChatMember. Before a channel joins the feed, the bot asks Telegram for your status in that chat and continues only if the status is creator, administrator, or member.</p>
-    <p>The aim is a Telegram you can actually keep up with, where the feed is yours, the channel still belongs to the person who runs it, and a post stays where it is when the channel asked it not to leave.</p>
+    <p class="kicker">Fraser Brown</p>
+    <h1>Project notes</h1>
+    <p>A public page for each thing I'm building, including the ones that aren't finished and don't have a website yet.</p>
+    <ul class="home-list">
+      <li>
+        <a href="telegram-feed/">
+          <img src="telegram-feed/cover.jpg" alt="">
+          <div>
+            <h2>Your Telegram channels, in one private group</h2>
+            <p>A bot that files opted-in channels into a private group, and only if you're already a member.</p>
+          </div>
+        </a>
+      </li>
+    </ul>
   </main>
 </body>
 </html>
