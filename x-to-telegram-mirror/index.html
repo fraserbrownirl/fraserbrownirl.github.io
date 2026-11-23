@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X to Telegram Mirror</title>
+  <meta name="description" content="GitHub Actions cron polls X and mirrors new posts to a Telegram channel.">
+  <link rel="canonical" href="https://studio.frsr.com/x-to-telegram-mirror/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="X to Telegram Mirror">
+  <meta property="og:description" content="GitHub Actions cron polls X and mirrors new posts to a Telegram channel.">
+  <meta property="og:url" content="https://studio.frsr.com/x-to-telegram-mirror/">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="https://github.com/fraserbrownirl/x-to-telegram-mirror">X to Telegram Mirror</a>
+    </div>
+  </header>
+  <main>
+    <article class="wrap post">
+      <h1>X to Telegram Mirror</h1>
+      <p class="post-date">Nov 23, 2026</p>
+      <p>This repo is the hosted mirror half of T-Rex&#x27;s design experiment: one person&#x27;s Bearer token, one X account, posts copied into a Telegram channel on a schedule.</p>
+      <p>monitor.py runs under Actions cron. It reads state/last_seen.json, fetches new tweets from the X API v2 for a configured username, and sends formatted HTML messages to Telegram. Replies, reposts, and quote posts stay out of scope — originals only after setup.</p>
+      <p>It is not a product strangers run; it is infrastructure I deploy with secrets in the repo&#x27;s Actions settings. T-Rex is the reader-facing bot; this repo is the firehose mirror for a single handle.</p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <a href="https://github.com/fraserbrownirl/x-to-telegram-mirror">github.com/fraserbrownirl/x-to-telegram-mirror</a>
+    </div>
+  </footer>
+</body>
+</html>

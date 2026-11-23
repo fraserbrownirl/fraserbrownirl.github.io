@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pool Launch</title>
+  <meta name="description" content="Five-seat Clanker v5 raises on Base: the pooled ETH is the first candle.">
+  <link rel="canonical" href="https://studio.frsr.com/pool-launch/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Pool Launch">
+  <meta property="og:description" content="Five-seat Clanker v5 raises on Base: the pooled ETH is the first candle.">
+  <meta property="og:url" content="https://studio.frsr.com/pool-launch/">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="https://github.com/fraserbrownirl/pool-launch">Pool Launch</a>
+    </div>
+  </header>
+  <main>
+    <article class="wrap post">
+      <h1>Pool Launch</h1>
+      <p class="post-date">Nov 23, 2026</p>
+      <p>Pool Launch is PoolRaise on Base. One minimal proxy per launch. Five people each put in the same amount of ETH. The creator does not pay in. When the fifth slot fills, anyone can call launch and the whole pool becomes Clanker v5&#x27;s createLaunchAndBuy in that transaction — the launch buy is the first candle.</p>
+      <p>The tokens from that buy stay in the raise and vest to the creator: at least a 30-day lock, then linear vesting if configured. claimVested is permissionless and pays the creator. There is no other token path out.</p>
+      <p>Trade tax on the v5 pool is split across seven fee slots: protocol, creator, and the five participants. Each party claims its own share from Clanker&#x27;s FeeEscrow in native ETH. Anti-snipe is on for the launch window so bots cannot dump on the candle.</p>
+      <p>The factory at 0x37e31e8caeea1abc0c6ed86dea6c1724b6a644d8 on Base is live. Token addresses must end in cccc; an off-chain salt grinder finds a valid creatorSalt before launch. What is not finished is the public join UI most strangers would expect — the contracts and keeper path are the product today.</p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <a href="https://github.com/fraserbrownirl/pool-launch">github.com/fraserbrownirl/pool-launch</a>
+    </div>
+  </footer>
+</body>
+</html>

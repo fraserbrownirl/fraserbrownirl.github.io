@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parrot Token</title>
+  <meta name="description" content="21M PARROT fixed supply, World ID 4.0 claims, referral tranche on-chain.">
+  <link rel="canonical" href="https://studio.frsr.com/parrot-token/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Parrot Token">
+  <meta property="og:description" content="21M PARROT fixed supply, World ID 4.0 claims, referral tranche on-chain.">
+  <meta property="og:url" content="https://studio.frsr.com/parrot-token/">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="https://github.com/fraserbrownirl/parrot-token">Parrot Token</a>
+    </div>
+  </header>
+  <main>
+    <article class="wrap post">
+      <h1>Parrot Token</h1>
+      <p class="post-date">Nov 23, 2026</p>
+      <p>parrot-token is the contracts for the parrot World App mini-app: 21 million PARROT minted once, split between a join curve and a referral tranche.</p>
+      <p>Claims use Path B: parrot already verifies World ID 4.0 Orb proofs off-chain. The backend signs an EIP-712 authorization with rank and referrer; ParrotDistributor on-chain checks the signature, dedupes nullifiers, pays the curve amount and referral reward. The claimSigner is trusted for human verification; amounts and caps are enforced in Solidity.</p>
+      <p>Referral rewards pay when the referee claims, not at signup. Self-referral is blocked and each referrer has a cap. After the claim window, undistributed tokens can sweep to treasury.</p>
+      <p>Foundry project with submodules — not in the app monorepo on purpose.</p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <a href="https://github.com/fraserbrownirl/parrot-token">github.com/fraserbrownirl/parrot-token</a>
+    </div>
+  </footer>
+</body>
+</html>
